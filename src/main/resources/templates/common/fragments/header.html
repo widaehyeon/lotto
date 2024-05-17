@@ -3,7 +3,21 @@
     xmlns:th="http://www.thymeleaf.org"
     th:fragment="HeaderFragment">
 <head>
-    <meta charset="UTF-8">
-    <h1>이것은 header 이다</h1>
+    <div class="container container-nav">
+        <div class="logo">
+            <span class="logo-circle">🍀</span>
+            <span class="site-name">로또명당</span>
+        </div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a th:href="@{/}">메뉴 1</a></li>
+                <li><a th:href="@{/}">메뉴 2</a></li>
+                <li><a th:href="@{/}">메뉴 3</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">&#9776;</button>
+        <a th:href="@{/}" class="header-btn login-btn">로그인</a>
+        <a th:href="@{/}" class="btn-signup">회원가입</a>
+    </div>
 </head>
 </html>
